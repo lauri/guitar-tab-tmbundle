@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>txt</string>
+		<string>tab</string>
+	</array>
+	<key>name</key>
+	<string>Guitar Tab</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>\|</string>
+			<key>end</key>
+			<string>\n</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>-</string>
+					<key>name</key>
+					<string>comment.tab</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>[xhpbr\/\\]+</string>
+					<key>name</key>
+					<string>constant.tab</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\d+</string>
+					<key>name</key>
+					<string>keyword.tab</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.tab</string>
+	<key>uuid</key>
+	<string>45BEA4A3-023C-4492-B3B2-5699DE7F7B38</string>
+</dict>
+</plist>
